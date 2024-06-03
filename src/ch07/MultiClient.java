@@ -12,7 +12,7 @@ public class MultiClient {
 	public static void main(String[] args) {
 
 		try {
-			Socket socket = new Socket("192.168.0.48", 5000);
+			Socket socket = new Socket("localhost", 5000);
 			PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
